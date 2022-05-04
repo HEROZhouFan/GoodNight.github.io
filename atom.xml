@@ -6,7 +6,7 @@
   <link href="https://herozhoufan.github.io/atom.xml" rel="self"/>
   
   <link href="https://herozhoufan.github.io/"/>
-  <updated>2022-05-02T11:23:47.024Z</updated>
+  <updated>2022-05-04T14:08:17.341Z</updated>
   <id>https://herozhoufan.github.io/</id>
   
   <author>
@@ -15,6 +15,93 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Git代理设置</title>
+    <link href="https://herozhoufan.github.io/2022/05/04/Git%E4%BB%A3%E7%90%86%E8%AE%BE%E7%BD%AE/"/>
+    <id>https://herozhoufan.github.io/2022/05/04/Git%E4%BB%A3%E7%90%86%E8%AE%BE%E7%BD%AE/</id>
+    <published>2022-05-04T13:58:21.000Z</published>
+    <updated>2022-05-04T14:08:17.341Z</updated>
+    
+    <content type="html"><![CDATA[<p>git clone 一直报错</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">OpenSSL SSL_connect: Connection was reset <span class="keyword">in</span> connection to github.com:443</span><br></pre></td></tr></table></figure><p>网上找了很久发现是因为开了VPN代理的问题</p><h2 id="Git-设置代理"><a href="#Git-设置代理" class="headerlink" title="Git 设置代理"></a>Git 设置代理</h2><p>查看自己的VPN端口号，假如你的端口号是7890，在git bash命令行中输入以下命令即可：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global http.proxy 127.0.0.1:7890</span><br></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global https.proxy 127.0.0.1:7890</span><br></pre></td></tr></table></figure><p>如果你之前git中已经设置过上述配置，则使用如下命令取消再进行配置即可：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global --<span class="built_in">unset</span> http.proxy</span><br></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global --<span class="built_in">unset</span> https.proxy</span><br></pre></td></tr></table></figure><h3 id="其他查看配置的命令"><a href="#其他查看配置的命令" class="headerlink" title="其他查看配置的命令"></a>其他查看配置的命令</h3><h4 id="查看git的所有配置"><a href="#查看git的所有配置" class="headerlink" title="查看git的所有配置"></a>查看git的所有配置</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global -l</span><br></pre></td></tr></table></figure><h4 id="查看git的http代理配置"><a href="#查看git的http代理配置" class="headerlink" title="查看git的http代理配置"></a>查看git的http代理配置</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global http.proxy</span><br></pre></td></tr></table></figure><h4 id="查看git的https代理配置"><a href="#查看git的https代理配置" class="headerlink" title="查看git的https代理配置"></a>查看git的https代理配置</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global https.proxy</span><br></pre></td></tr></table></figure><h2 id="IDEA-设置代理"><a href="#IDEA-设置代理" class="headerlink" title="IDEA 设置代理"></a>IDEA 设置代理</h2><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/20220504220743wBi1H8.png" alt="image-20220504220743061"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;git clone 一直报错&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=</summary>
+      
+    
+    
+    
+    <category term="Git" scheme="https://herozhoufan.github.io/categories/Git/"/>
+    
+    
+    <category term="Git" scheme="https://herozhoufan.github.io/tags/Git/"/>
+    
+    <category term="VPN" scheme="https://herozhoufan.github.io/tags/VPN/"/>
+    
+    <category term="proxy" scheme="https://herozhoufan.github.io/tags/proxy/"/>
+    
+    <category term="GitHub" scheme="https://herozhoufan.github.io/tags/GitHub/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Maven安装配置</title>
+    <link href="https://herozhoufan.github.io/2022/05/04/Maven%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/"/>
+    <id>https://herozhoufan.github.io/2022/05/04/Maven%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/</id>
+    <published>2022-05-04T12:57:44.000Z</published>
+    <updated>2022-05-04T13:56:37.271Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>官网地址：<a href="https://maven.apache.org/">https://maven.apache.org/</a></p><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/20220504212547EO0mql.png" alt="image-20220504212547456"></p><h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><h3 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h3><p>配置到<code>~/.zshrc</code>文件中</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim ~/.zshrc</span><br></pre></td></tr></table></figure><p>将bin目录添加进去（注意这里M2_HOME换成自己的目录）</p><figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">export M2<span class="built_in">_</span>HOME=<span class="built_in">$</span>PATH:/Users/zhoufan/devTools/apache-maven-3.8.5</span><br><span class="line">export PATH=<span class="built_in">$</span>PATH:<span class="built_in">$</span>M2<span class="built_in">_</span>HOME/bin</span><br></pre></td></tr></table></figure><p><code>Esc :wq!</code>保存退出</p><p>验证</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mvn -v</span><br></pre></td></tr></table></figure><h3 id="配置settings-xml"><a href="#配置settings-xml" class="headerlink" title="配置settings.xml"></a>配置<code>settings.xml</code></h3><p>打开 <code>/apache-maven-3.8.5/conf/settings.xml</code> 文件</p><h4 id="设置本地仓库位置"><a href="#设置本地仓库位置" class="headerlink" title="设置本地仓库位置"></a>设置本地仓库位置</h4><p>（没有设置的话，默认是在<code>$&#123;user.home&#125;/.m2/repository</code>）</p><figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;localRepository&gt;/Users/zhoufan/devTools/local<span class="built_in">_</span>maven&lt;/localRepository&gt;</span><br></pre></td></tr></table></figure><h4 id="添加阿里云镜像"><a href="#添加阿里云镜像" class="headerlink" title="添加阿里云镜像"></a>添加阿里云镜像</h4><p>找到<code>&lt;/mirrors&gt;</code>节点，添加</p><figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;mirror&gt;</span><br><span class="line">    &lt;id&gt;nexus-aliyun&lt;/id&gt;</span><br><span class="line">    &lt;mirrorOf&gt;*&lt;/mirrorOf&gt;</span><br><span class="line">    &lt;name&gt;Nexus aliyun&lt;/name&gt;</span><br><span class="line">    &lt;url&gt;http://maven.aliyun.com/nexus/content/groups/public/&lt;/url&gt;</span><br><span class="line">&lt;/mirror&gt;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h2&gt;&lt;p&gt;官网地址：&lt;a href=&quot;https://maven.apache.org/&quot;&gt;https://maven.apache.org/&lt;/a&gt;</summary>
+      
+    
+    
+    
+    <category term="Maven" scheme="https://herozhoufan.github.io/categories/Maven/"/>
+    
+    
+    <category term="环境搭建" scheme="https://herozhoufan.github.io/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
+    
+    <category term="软件安装" scheme="https://herozhoufan.github.io/tags/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85/"/>
+    
+    <category term="Maven" scheme="https://herozhoufan.github.io/tags/Maven/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Docker安装配置</title>
+    <link href="https://herozhoufan.github.io/2022/05/04/Docker%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/"/>
+    <id>https://herozhoufan.github.io/2022/05/04/Docker%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/</id>
+    <published>2022-05-04T12:26:03.000Z</published>
+    <updated>2022-05-04T13:56:00.911Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>官网地址：<a href="https://www.docker.com/">https://www.docker.com/</a></p><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/20220504210805mHR4T5.png" alt="image-20220504210805816"></p><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/20220504210841bKpDh1.png" alt="image-20220504210841580"></p><h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><h3 id="配置阿里云镜像源"><a href="#配置阿里云镜像源" class="headerlink" title="配置阿里云镜像源"></a>配置阿里云镜像源</h3><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/20220504211821M78G2H.png" alt="image-20220504211821872"></p><p>添加镜像配置</p><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;registry-mirrors&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">    <span class="string">&quot;https://0wg8f6sb.mirror.aliyuncs.com&quot;</span></span><br><span class="line">  <span class="punctuation">]</span></span><br></pre></td></tr></table></figure><p>完整配置如下（包含docker默认配置）</p><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;builder&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;gc&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;defaultKeepStorage&quot;</span><span class="punctuation">:</span> <span class="string">&quot;20GB&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;enabled&quot;</span><span class="punctuation">:</span> <span class="keyword">true</span></span><br><span class="line">    <span class="punctuation">&#125;</span></span><br><span class="line">  <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;experimental&quot;</span><span class="punctuation">:</span> <span class="keyword">false</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;features&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;buildkit&quot;</span><span class="punctuation">:</span> <span class="keyword">true</span></span><br><span class="line">  <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;registry-mirrors&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">    <span class="string">&quot;https://0wg8f6sb.mirror.aliyuncs.com&quot;</span></span><br><span class="line">  <span class="punctuation">]</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h2&gt;&lt;p&gt;官网地址：&lt;a href=&quot;https://www.docker.com/&quot;&gt;https://www.docker.com/&lt;/a&gt;&lt;/p&gt;</summary>
+      
+    
+    
+    
+    <category term="Docker" scheme="https://herozhoufan.github.io/categories/Docker/"/>
+    
+    
+    <category term="环境搭建" scheme="https://herozhoufan.github.io/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
+    
+    <category term="软件安装" scheme="https://herozhoufan.github.io/tags/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85/"/>
+    
+    <category term="Docker" scheme="https://herozhoufan.github.io/tags/Docker/"/>
+    
+  </entry>
   
   <entry>
     <title>vim配置</title>
@@ -187,11 +274,11 @@
     
     <category term="软件安装" scheme="https://herozhoufan.github.io/tags/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85/"/>
     
-    <category term="HomeBrew" scheme="https://herozhoufan.github.io/tags/HomeBrew/"/>
-    
     <category term="Git" scheme="https://herozhoufan.github.io/tags/Git/"/>
     
     <category term="GitHub" scheme="https://herozhoufan.github.io/tags/GitHub/"/>
+    
+    <category term="HomeBrew" scheme="https://herozhoufan.github.io/tags/HomeBrew/"/>
     
   </entry>
   
