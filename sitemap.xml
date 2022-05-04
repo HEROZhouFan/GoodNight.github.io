@@ -241,20 +241,6 @@
   </url>
   
   <url>
-    <loc>https://herozhoufan.github.io/tags/Mysql/</loc>
-    <lastmod>2022-05-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://herozhoufan.github.io/tags/Maven/</loc>
-    <lastmod>2022-05-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://herozhoufan.github.io/tags/Node-js/</loc>
     <lastmod>2022-05-04</lastmod>
     <changefreq>weekly</changefreq>
@@ -262,7 +248,21 @@
   </url>
   
   <url>
+    <loc>https://herozhoufan.github.io/tags/Mysql/</loc>
+    <lastmod>2022-05-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://herozhoufan.github.io/tags/Redis/</loc>
+    <lastmod>2022-05-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://herozhoufan.github.io/tags/Maven/</loc>
     <lastmod>2022-05-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -334,13 +334,6 @@
   </url>
   
   <url>
-    <loc>https://herozhoufan.github.io/categories/HomeBrew/</loc>
-    <lastmod>2022-05-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://herozhoufan.github.io/categories/IDEA/</loc>
     <lastmod>2022-05-04</lastmod>
     <changefreq>weekly</changefreq>
@@ -348,14 +341,7 @@
   </url>
   
   <url>
-    <loc>https://herozhoufan.github.io/categories/Mysql/</loc>
-    <lastmod>2022-05-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://herozhoufan.github.io/categories/Maven/</loc>
+    <loc>https://herozhoufan.github.io/categories/HomeBrew/</loc>
     <lastmod>2022-05-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -369,7 +355,21 @@
   </url>
   
   <url>
+    <loc>https://herozhoufan.github.io/categories/Mysql/</loc>
+    <lastmod>2022-05-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://herozhoufan.github.io/categories/Redis/</loc>
+    <lastmod>2022-05-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://herozhoufan.github.io/categories/Maven/</loc>
     <lastmod>2022-05-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
