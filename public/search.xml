@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>vim配置</title>
+      <link href="/2022/05/01/vim%E9%85%8D%E7%BD%AE/"/>
+      <url>/2022/05/01/vim%E9%85%8D%E7%BD%AE/</url>
+      
+        <content type="html"><![CDATA[<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim ~/.vimrc</span><br></pre></td></tr></table></figure><p>我自己做的配置</p><figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">set number &quot;显示行号&quot;</span><br><span class="line">syntax on &quot;代码高亮&quot;</span><br><span class="line">set mouse=a &quot;启用鼠标&quot;</span><br><span class="line">set t<span class="built_in">_</span>Co=256 &quot;启用256色&quot;</span><br><span class="line">filetype indent on &quot;开启文件类型检查，并且载入与该类型对应的缩进规则&quot;</span><br><span class="line">set cursorline &quot;光标所在的当前行高亮&quot;</span><br><span class="line">set incsearch &quot;输入搜索模式时，每输入一个字符，就自动跳到第一个匹配的结果&quot;</span><br><span class="line">set ignorecase &quot;搜索时忽略大小写&quot;</span><br></pre></td></tr></table></figure><p><strong>注意后面注释是<code>双引号</code>，配置成<code>#</code>会有问题</strong></p><p>更多其他配置参考</p><p><a href="https://www.ruanyifeng.com/blog/2018/09/vimrc.html">https://www.ruanyifeng.com/blog/2018/09/vimrc.html</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Vim </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Vim </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>iTerm2 + Oh My Zsh安装配置</title>
+      <link href="/2022/05/01/iTerm2%20+%20Oh%20My%20Zsh%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/"/>
+      <url>/2022/05/01/iTerm2%20+%20Oh%20My%20Zsh%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/</url>
+      
+        <content type="html"><![CDATA[<h2 id="HomeBrew-cask-安装-iTerm2"><a href="#HomeBrew-cask-安装-iTerm2" class="headerlink" title="HomeBrew cask 安装 iTerm2"></a>HomeBrew cask 安装 iTerm2</h2><p><strong>高版本和低版本 HomeBrew cask 命令稍有不同</strong></p><p>高版本</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install --cask iterm2</span><br></pre></td></tr></table></figure><p>低版本</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew cask install sourcetree</span><br></pre></td></tr></table></figure><h2 id="iTerm2-设置"><a href="#iTerm2-设置" class="headerlink" title="iTerm2 设置"></a>iTerm2 设置</h2><h3 id="将-iTerm2-设置为默认-iTerm"><a href="#将-iTerm2-设置为默认-iTerm" class="headerlink" title="将 iTerm2 设置为默认 iTerm"></a>将 iTerm2 设置为默认 iTerm</h3><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/20220502205635AEAt6X.png" alt="image-20220502205627857"></p><h3 id="关闭-ITerm2-的确认关闭弹窗提醒"><a href="#关闭-ITerm2-的确认关闭弹窗提醒" class="headerlink" title="关闭 ITerm2 的确认关闭弹窗提醒"></a>关闭 ITerm2 的确认关闭弹窗提醒</h3><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/20220502205927rMryIp.png" alt="image-20220502205921543"></p><hr><h2 id="zsh"><a href="#zsh" class="headerlink" title="zsh"></a>zsh</h2><h3 id="查看-zsh-版本-Mac-自带"><a href="#查看-zsh-版本-Mac-自带" class="headerlink" title="查看 zsh 版本 (Mac 自带)"></a>查看 zsh 版本 (Mac 自带)</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">zsh --version</span><br></pre></td></tr></table></figure><h2 id="如果没有安装-zsh，使用-HomeBrew-安装"><a href="#如果没有安装-zsh，使用-HomeBrew-安装" class="headerlink" title="如果没有安装 zsh，使用 HomeBrew 安装"></a>如果没有安装 zsh，使用 HomeBrew 安装</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install zsh</span><br></pre></td></tr></table></figure><h3 id="如果有安装，可以更新至最新版本"><a href="#如果有安装，可以更新至最新版本" class="headerlink" title="如果有安装，可以更新至最新版本"></a>如果有安装，可以更新至最新版本</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew upgrade zsh</span><br></pre></td></tr></table></figure><h3 id="安装完成以后，将zsh设置为默认的Shell"><a href="#安装完成以后，将zsh设置为默认的Shell" class="headerlink" title="安装完成以后，将zsh设置为默认的Shell"></a>安装完成以后，将zsh设置为默认的Shell</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chsh -s /bin/zsh</span><br></pre></td></tr></table></figure><hr><h2 id="Oh-My-Zsh"><a href="#Oh-My-Zsh" class="headerlink" title="Oh My Zsh"></a>Oh My Zsh</h2><p><strong>提前备份好<code>~/.zshrc</code>文件，不然会被覆盖掉</strong></p><h3 id="首先安装-wget"><a href="#首先安装-wget" class="headerlink" title="首先安装 wget"></a>首先安装 wget</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install wget</span><br></pre></td></tr></table></figure><h3 id="wget-安装-Oh-My-Zsh"><a href="#wget-安装-Oh-My-Zsh" class="headerlink" title="wget 安装 Oh My Zsh"></a>wget 安装 Oh My Zsh</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh\n</span><br></pre></td></tr></table></figure><hr><h2 id="修改默认-Shell为-zsh"><a href="#修改默认-Shell为-zsh" class="headerlink" title="修改默认 Shell为 zsh"></a>修改默认 Shell为 zsh</h2><h3 id="查看所有的-shell"><a href="#查看所有的-shell" class="headerlink" title="查看所有的 shell"></a>查看所有的 shell</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cat</span> /etc/shells</span><br></pre></td></tr></table></figure><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/20220501223249oOuGM9.png" alt="image-20220501223249296"></p><h3 id="查看当前窗口使用的-shell"><a href="#查看当前窗口使用的-shell" class="headerlink" title="查看当前窗口使用的 shell"></a>查看当前窗口使用的 shell</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">exho $0</span><br></pre></td></tr></table></figure><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/20220501223346lGUofr.png" alt="image-20220501223346779"></p><h3 id="修改系统默认-shell为-zsh"><a href="#修改系统默认-shell为-zsh" class="headerlink" title="修改系统默认 shell为 zsh"></a>修改系统默认 shell为 zsh</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chsh -s /bin/zsh</span><br></pre></td></tr></table></figure><hr><h2 id="Oh-My-Zsh-插件"><a href="#Oh-My-Zsh-插件" class="headerlink" title="Oh My Zsh 插件"></a>Oh My Zsh 插件</h2><h3 id="zsh-syntax-highlighting"><a href="#zsh-syntax-highlighting" class="headerlink" title="zsh-syntax-highlighting"></a>zsh-syntax-highlighting</h3><p>作用：代码高亮，平常用的<code>ls</code>、<code>cd</code> 等命令输入正确会绿色高亮显示，输入错误会显示其他的颜色</p><p>安装</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/zsh-users/zsh-syntax-highlighting.git <span class="variable">$&#123;ZSH_CUSTOM:-~/.oh-my-zsh/custom&#125;</span>/plugins/zsh-syntax-highlighting</span><br></pre></td></tr></table></figure><p>下载完成后，需在配置文件中配置生效（配置方法在下方⬇️）</p><h3 id="zsh-autosuggestions"><a href="#zsh-autosuggestions" class="headerlink" title="zsh-autosuggestions"></a>zsh-autosuggestions</h3><p>作用：代码补全   按 ⬆️或➡️即可补全</p><p>安装</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> git://github.com/zsh-users/zsh-autosuggestions <span class="variable">$ZSH_CUSTOM</span>/plugins/zsh-autosuggestions</span><br></pre></td></tr></table></figure><p>下载完成后，需在配置文件中配置生效（配置方法在在下方⬇️）</p><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/20220501225133rpLU1f.png" alt="image-20220501225133880"></p><h3 id="z"><a href="#z" class="headerlink" title="z"></a>z</h3><p>作用：切换目录</p><p>安装  自带，需在配置文件中配置生效（配置方法在在下方⬇️）</p><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/20220501230303uSnSwB.png" alt="image-20220501230303640"></p><h3 id="d"><a href="#d" class="headerlink" title="d"></a>d</h3><p>作用：目录切换</p><p>安装 自带，默认已开启</p><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/20220501225924sQAxyT.png" alt="image-20220501225924807"></p><h3 id="sublime"><a href="#sublime" class="headerlink" title="sublime"></a>sublime</h3><p>作用：在命令行使用 <code>Sublime Text</code> 打开文件、项目</p><table><thead><tr><th>命令</th><th>作用</th></tr></thead><tbody><tr><td>st</td><td>打开 sublime</td></tr><tr><td>st + 文件夹</td><td>打开该文件夹</td></tr><tr><td>st + 文件</td><td>打开该文件</td></tr><tr><td>stt</td><td>打开当前的文件夹，相当于 st .</td></tr><tr><td>sst</td><td>管理员权限 相当于 sudo st</td></tr></tbody></table><p>安装 自带，需在配置文件中配置生效（配置方法在在下方⬇️）</p><hr><h2 id="Oh-My-Zsh-配置"><a href="#Oh-My-Zsh-配置" class="headerlink" title="Oh My Zsh 配置"></a>Oh My Zsh 配置</h2><h3 id="配置插件生效"><a href="#配置插件生效" class="headerlink" title="配置插件生效"></a>配置插件生效</h3><p><code>vim</code> 编辑配置文件<code>~/.zshr</code></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim ~/.zshrc</span><br></pre></td></tr></table></figure><p>找到<code>plugins</code>标签，添加自己需要的插件</p><figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">plugins=(</span><br><span class="line">    git</span><br><span class="line">    z</span><br><span class="line">    sublime</span><br><span class="line">    zsh-autosuggestions</span><br><span class="line">    zsh-syntax-highlighting</span><br><span class="line">  )</span><br></pre></td></tr></table></figure><p>重新加载配置文件</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">source</span> ~/.zshrc</span><br></pre></td></tr></table></figure><hr><h2 id="Oh-My-Zsh-快捷键"><a href="#Oh-My-Zsh-快捷键" class="headerlink" title="Oh My Zsh 快捷键"></a>Oh My Zsh 快捷键</h2><ul><li>鼠标选中即复制;</li><li>command + d 垂直分屏</li><li>command + shift + d 水平分屏</li><li>command + shift + h 打开剪切板(复制历史)</li><li>command + ; 命令自动完成</li><li>command + shift + ; 查看历史命令</li><li>command + option + b 按键回放(输入命令回放, 通过时间线)</li></ul><hr><h2 id="更换-zsh-主题为-Dracula"><a href="#更换-zsh-主题为-Dracula" class="headerlink" title="更换 zsh 主题为 Dracula"></a>更换 zsh 主题为 Dracula</h2><ol><li><p>下载主题文件</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/dracula/zsh.git</span><br></pre></td></tr></table></figure></li><li><p>将下载的<code>dracula.zsh-theme</code>文件 (找不到全局搜索下) 放到<code>/Users/zhoufan/.oh-my-zsh/themes</code>目录下</p><p>（<code>command + shift + .</code> 显示隐藏文件）</p><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/20220501233743O8A3qT.png" alt="image-20220501233743796"></p></li><li><p>将<code>async.zsh</code> 文件放到<code>/Users/zhoufan/.oh-my-zsh/lib</code>目录下</p><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/20220501234732bNQlIC.png" alt="image-20220501234732269"></p></li><li><p>修改zsh主题。编辑~(用户名)下.zshrc文件，修改ZSH_THEME为”dracula”</p></li></ol><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim ~/.zshrc</span><br></pre></td></tr></table></figure><p>修改ZSH_THEME为”dra</p><figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ZSH<span class="built_in">_</span>THEME=&quot;dracula&quot;</span><br></pre></td></tr></table></figure><p>加载配置文件</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">source</span> ~/.zshrc</span><br></pre></td></tr></table></figure><hr><h2 id="更换-iTerm2-主题为-Dracula"><a href="#更换-iTerm2-主题为-Dracula" class="headerlink" title="更换 iTerm2 主题为 Dracula"></a>更换 iTerm2 主题为 Dracula</h2><p>下载</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/dracula/iterm.git</span><br></pre></td></tr></table></figure><p>打开 iTerm2 偏好设置</p><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/20220502001758v2xPaK.png" alt="image-20220502001758622"></p><p>最下方 import，将<code>Dracula.itermcolors</code>文件导入进来</p><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/20220502002247rVjLhX.png" alt="image-20220502002247276"></p><p>选择应用，完成</p><h2 id="iTerm2一键ssh连接远程服务器配置"><a href="#iTerm2一键ssh连接远程服务器配置" class="headerlink" title="iTerm2一键ssh连接远程服务器配置"></a>iTerm2一键ssh连接远程服务器配置</h2><ol><li><p>编写一个文件，内容如下，把对应的中文改成你的服务器相关内容就行，这里我将其编写为txt文本文件，放到用户目录下的.zsh文件夹下(~&#x2F;.zsh&#x2F;aliyun.txt)(command+shift+.显示隐藏文件夹)</p><figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="params">#</span>!/usr/bin/expect -f</span><br><span class="line">  set user 用户名</span><br><span class="line">  set host ip地址</span><br><span class="line">  set password 密码</span><br><span class="line">  set timeout -1</span><br><span class="line"></span><br><span class="line">  spawn ssh <span class="built_in">$</span>user@<span class="built_in">$</span>host</span><br><span class="line">  expect &quot;*assword:*&quot;</span><br><span class="line">  send &quot;<span class="built_in">$</span>password<span class="keyword">\r</span>&quot;</span><br><span class="line">  interact</span><br><span class="line">  expect eof</span><br></pre></td></tr></table></figure></li><li><p>打开iTerm2，打开设置(Preferences)，点击Profiles，点左下角+</p><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/20220502002505Bcf7OA.png" alt="zsh_ssh"></p></li><li><p>以后在终端界面直接点击即可连接到服务器</p><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/202205020026015NJZAg.jpeg" alt="img"></p></li></ol><hr><h2 id="关闭-Oh-My-Zsh-自动更新"><a href="#关闭-Oh-My-Zsh-自动更新" class="headerlink" title="关闭 Oh My Zsh 自动更新"></a>关闭 Oh My Zsh 自动更新</h2><p>每天第一次打开Terminal的时候都会卡顿一下，原因是因为ZSH每天会在第一次打开时进行自动更新检测</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim ~/.zshrc</span><br></pre></td></tr></table></figure><p>查找<code>DISABLE_AUTO_UPDATE</code>，将其注释打开，使其生效</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DISABLE_AUTO_UPDATE=<span class="string">&quot;true&quot;</span></span><br></pre></td></tr></table></figure><p>重新加载配置文件</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">source</span> ~/.zshrc</span><br></pre></td></tr></table></figure><p>此时，再次打开Terminal的时候就不会出发自动更新检查。<br>那么如何手动更新呢？请执行下面的命令即可：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">upgrade_oh_my_zsh</span><br></pre></td></tr></table></figure><p>当然也可以通过下面的方式来进行检查更新：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">zsh ~/.oh-my-zsh/tools/check_for_upgrade.sh</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> iTerm2 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 环境搭建 </tag>
+            
+            <tag> 软件安装 </tag>
+            
+            <tag> HomeBrew </tag>
+            
+            <tag> iTerm2 </tag>
+            
+            <tag> Oh My Zsh </tag>
+            
+            <tag> Shell </tag>
+            
+            <tag> Dracula </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Upic图床安装配置</title>
+      <link href="/2022/05/01/Upic%E5%9B%BE%E5%BA%8A%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/"/>
+      <url>/2022/05/01/Upic%E5%9B%BE%E5%BA%8A%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/</url>
+      
+        <content type="html"><![CDATA[<h2 id="GitHub创建仓库"><a href="#GitHub创建仓库" class="headerlink" title="GitHub创建仓库"></a>GitHub创建仓库</h2><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/202205010723Q3oBC4.png" alt="image-20220501170723268"></p><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/202205011027u4cBiC.png" alt="image-20220501171027455"></p><p>仓库创建完成，进入<code>Settings</code></p><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/202205011326Zyk2lO.png" alt="image-20220501171253805"></p><p>拉到最下方</p><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/202205011334nC7UF1.png" alt="image-20220501171334062"></p><p>创建一个密钥</p><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/202205011457jAGvbo.png" alt="image-20220501171457123"></p><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/202205013413dJj97b.png" alt="image-20220501173413296"></p><p><img src="/../../../../Downloads/202205012219IkpHYS.png" alt="image-20220501172219357"></p><p><strong>创建密钥成功，记得复制保存</strong></p><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/202205013512kHktj4.png" alt="image-20220501173512517"></p><hr><h2 id="Upic配置GitHub仓库"><a href="#Upic配置GitHub仓库" class="headerlink" title="Upic配置GitHub仓库"></a>Upic配置GitHub仓库</h2><p>打开Upic<code>偏好设置</code></p><p>配置用户名，仓库名，分支，Token（刚才配置生成的字符串），存储路径</p><p>为防止图片重名，这边设置时间+随机数.后缀的格式</p><figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">uPic/&#123;year&#125;&#123;month&#125;&#123;day&#125;&#123;hour&#125;&#123;minute&#125;&#123;second&#125;&#123;random&#125;&#123;.suffix&#125;</span><br></pre></td></tr></table></figure><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/202205013721idBZvR.png" alt="image-20220501173721867"></p><p>上面的图配置的是 jsDelivr CDN 加速，当 jsDelivr CDN 挂了图片会加载不出来，所以我后来取消了 jsDelivr CDN加速，并将域名改成了</p><figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://raw.githubusercontent.com/HeroZhouFan/uPic/master</span><br></pre></td></tr></table></figure><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/20220502210514gdAg6Q.png" alt="image-20220502210504440"></p><hr><h2 id="Typort配置图床"><a href="#Typort配置图床" class="headerlink" title="Typort配置图床"></a>Typort配置图床</h2><p>打开Typort<code>偏好设置</code></p><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/20220501174234mJYZqQ.png" alt="image-20220501174234274"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Upic </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 软件安装 </tag>
+            
+            <tag> GitHub </tag>
+            
+            <tag> Upic </tag>
+            
+            <tag> Typort </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Mysql安装配置</title>
+      <link href="/2022/05/01/Mysql%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/"/>
+      <url>/2022/05/01/Mysql%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/</url>
+      
+        <content type="html"><![CDATA[<h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p>官网地址：<a href="https://www.mysql.com/">https://www.mysql.com/</a></p><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/202205012741UcW8dm.png" alt="image-20220501162741549"></p><p>选择DOWNLOADS，拉到最下方</p><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/202205012805I12v1K.png" alt="image-20220501162805608"></p><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/202205012828M11Qyp.png" alt="image-20220501162828867"></p><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/202205012947PCz4TP.png" alt="image-20220501162947485"></p><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/202205013013hqoH3q.png" alt="image-20220501163013025"></p><hr><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>启动安装程序，选择第二个</p><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/202205013254Bt7qao.png" alt="image-20220501163253971"></p><p>输入密码</p><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/2022050122465Gj1FO.png" alt="image-20220501162246627"></p><p>安装完成，在系统偏好设置中找到mysql</p><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/202205012425HpjoKs.png" alt="image-20220501162425377"></p><hr><h2 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h2><h3 id="配置到-zshrc文件中（重启有效）"><a href="#配置到-zshrc文件中（重启有效）" class="headerlink" title="配置到 ~/.zshrc文件中（重启有效）"></a>配置到 <code>~/.zshrc</code>文件中（重启有效）</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim ~/.zshrc</span><br></pre></td></tr></table></figure><p>将mysql的<code>bin</code>目录配置到文件中</p><figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">export PATH=<span class="built_in">$</span>PATH:/usr/local/mysql/bin</span><br></pre></td></tr></table></figure><h3 id="配置到-bash-profile文件中（重启后需要重新加载）"><a href="#配置到-bash-profile文件中（重启后需要重新加载）" class="headerlink" title="配置到 ~/.bash_profile文件中（重启后需要重新加载）"></a>配置到 <code>~/.bash_profile</code>文件中（重启后需要重新加载）</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim ~/.bash_profile</span><br></pre></td></tr></table></figure><p>将<code>bin</code>目录配置到文件中后，运行下方命令加载配置</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">source</span> ~/.bash_profile</span><br></pre></td></tr></table></figure><p>或者将这行命令加到<code>~/.zshrc</code>文件中，开机后就会自动加载配置文件</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Mysql </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 环境搭建 </tag>
+            
+            <tag> 软件安装 </tag>
+            
+            <tag> Mysql </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Node.js安装配置</title>
+      <link href="/2022/05/01/Node.js%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/"/>
+      <url>/2022/05/01/Node.js%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Node-js"><a href="#Node-js" class="headerlink" title="Node.js"></a>Node.js</h2><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>官网地址：<a href="https://nodejs.org/en/">https://nodejs.org/en/</a></p><p>官网下载安装包，傻瓜式安装</p><h3 id="查看npm版本"><a href="#查看npm版本" class="headerlink" title="查看npm版本"></a>查看npm版本</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm -v</span><br></pre></td></tr></table></figure><h3 id="查看Node-js版本"><a href="#查看Node-js版本" class="headerlink" title="查看Node.js版本"></a>查看Node.js版本</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br></pre></td></tr></table></figure><hr><h2 id="配置镜像源"><a href="#配置镜像源" class="headerlink" title="配置镜像源"></a>配置镜像源</h2><h3 id="设置淘宝镜像源"><a href="#设置淘宝镜像源" class="headerlink" title="设置淘宝镜像源"></a>设置淘宝镜像源</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config <span class="built_in">set</span> registry https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure><h3 id="验证"><a href="#验证" class="headerlink" title="验证"></a>验证</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config get registry</span><br></pre></td></tr></table></figure><hr><h2 id="cnpm"><a href="#cnpm" class="headerlink" title="cnpm"></a>cnpm</h2><h3 id="安装-1"><a href="#安装-1" class="headerlink" title="安装"></a>安装</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure><h3 id="cnpm下载"><a href="#cnpm下载" class="headerlink" title="cnpm下载"></a>cnpm下载</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install express</span><br></pre></td></tr></table></figure><hr><h2 id="n-Node-js版本管理工具"><a href="#n-Node-js版本管理工具" class="headerlink" title="n -Node.js版本管理工具"></a>n -Node.js版本管理工具</h2><h3 id="安装-2"><a href="#安装-2" class="headerlink" title="安装"></a>安装</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo npm install n -g</span><br></pre></td></tr></table></figure><h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><h4 id="查看安装的所有Node-js版本"><a href="#查看安装的所有Node-js版本" class="headerlink" title="查看安装的所有Node.js版本"></a>查看安装的所有Node.js版本</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo n</span><br></pre></td></tr></table></figure><p>⬆️⬇️ 选中版本</p><p><code>回车</code> 切换选中的版本</p><p><code>d</code> 删除选中的版本</p><p><code>q</code> 退出</p><h4 id="使用n安装Node-js"><a href="#使用n安装Node-js" class="headerlink" title="使用n安装Node.js"></a>使用n安装Node.js</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo n 16.13.0</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> Node.js </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 环境搭建 </tag>
+            
+            <tag> 软件安装 </tag>
+            
+            <tag> Node.js </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Git安装配置</title>
+      <link href="/2022/05/01/Git%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/"/>
+      <url>/2022/05/01/Git%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/</url>
+      
+        <content type="html"><![CDATA[<h2 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install git</span><br></pre></td></tr></table></figure><p>查看是否安装完成</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git --version</span><br></pre></td></tr></table></figure><hr><h2 id="配置git"><a href="#配置git" class="headerlink" title="配置git"></a>配置git</h2><p>设置用户名</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name <span class="string">&quot;username&quot;</span></span><br></pre></td></tr></table></figure><p>设置邮箱</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.email <span class="string">&quot;email&quot;</span></span><br></pre></td></tr></table></figure><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/2022050151048TgDsY.png" alt="image-20220501115104335"></p><hr><h2 id="绑定GitHub"><a href="#绑定GitHub" class="headerlink" title="绑定GitHub"></a>绑定GitHub</h2><p>生成密钥 SSH key</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">&#x27;上面配置的邮箱&#x27;</span></span><br></pre></td></tr></table></figure><p>按照提示完成三次回车，即可生成 ssh key</p><p>找到生成的 .pub 文件</p><p>&#x2F;Users&#x2F;zhoufan&#x2F;.ssh&#x2F;id_rsa.pub（隐藏文件 <code>shift+command+.</code> 显示）</p><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/2022050103533R3c6B.png" alt="image-20220501120353031"></p><p>登录github账号，进入到<code>Settings</code></p><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/202205010532qChpg2.png" alt="image-20220501120532010"></p><p>New SSH key</p><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/202205010652waBJ5v.png" alt="image-20220501120652212"></p><p>取一个名字，将.pub 的密钥粘贴进来</p><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/202205010830gF3ckR.png" alt="image-20220501120830155"></p><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/202205010846bXuJ3W.png" alt="image-20220501120846457"></p><p>这样就配置好了 SSH 访问 Github 的权限</p><p>最后测试一下</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure><p>输入本机密码</p><p>连接成功</p><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/202205011628vBDwtb.png" alt="image-20220501121628848"></p><hr><h2 id="Sourcetree"><a href="#Sourcetree" class="headerlink" title="Sourcetree"></a>Sourcetree</h2><p>HomeBrew cask安装Sourcetree</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install --cask sourcetree</span><br></pre></td></tr></table></figure><p>下载完成后在启动台找到</p><p>打开<code>偏好设置</code></p><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/202205012035vsKFnH.png" alt="image-20220501122035070"></p><p>点击<code>连接账号</code>添加账号</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Git </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 环境搭建 </tag>
+            
+            <tag> 软件安装 </tag>
+            
+            <tag> HomeBrew </tag>
+            
+            <tag> Git </tag>
+            
+            <tag> GitHub </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>IEDA插件</title>
+      <link href="/2022/04/24/IEDA%E6%8F%92%E4%BB%B6/"/>
+      <url>/2022/04/24/IEDA%E6%8F%92%E4%BB%B6/</url>
+      
+        <content type="html"><![CDATA[<h3 id="Presentation-Assistant-快捷键展示"><a href="#Presentation-Assistant-快捷键展示" class="headerlink" title="Presentation Assistant 快捷键展示"></a>Presentation Assistant 快捷键展示</h3><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/2022042418264C9zfE.gif" alt="图片"></p><h3 id="Alibaba-Java-Code-Guidelines—-阿里巴巴-Java-代码规范"><a href="#Alibaba-Java-Code-Guidelines—-阿里巴巴-Java-代码规范" class="headerlink" title="Alibaba Java Code Guidelines— 阿里巴巴 Java 代码规范"></a>Alibaba Java Code Guidelines— 阿里巴巴 Java 代码规范</h3><h3 id="Translation-翻译插件"><a href="#Translation-翻译插件" class="headerlink" title="Translation - 翻译插件"></a>Translation - 翻译插件</h3><h3 id="SequenceDiagram-——-调用链路自动生成时序图"><a href="#SequenceDiagram-——-调用链路自动生成时序图" class="headerlink" title="SequenceDiagram —— 调用链路自动生成时序图"></a>SequenceDiagram —— 调用链路自动生成时序图</h3><h3 id="Rainbow-Brackets-——让你的括号变成不一样的颜色，防止错乱括号"><a href="#Rainbow-Brackets-——让你的括号变成不一样的颜色，防止错乱括号" class="headerlink" title="Rainbow Brackets ——让你的括号变成不一样的颜色，防止错乱括号"></a>Rainbow Brackets ——让你的括号变成不一样的颜色，防止错乱括号</h3><h3 id="HighlightBracketPair-——-括号开始结尾-高亮显示。"><a href="#HighlightBracketPair-——-括号开始结尾-高亮显示。" class="headerlink" title="HighlightBracketPair —— 括号开始结尾 高亮显示。"></a>HighlightBracketPair —— 括号开始结尾 高亮显示。</h3><h3 id="Grep-Console-控制台日志-高亮"><a href="#Grep-Console-控制台日志-高亮" class="headerlink" title="Grep Console 控制台日志 高亮"></a>Grep Console 控制台日志 高亮</h3><h3 id="google-java-format-——-代码自动格式化"><a href="#google-java-format-——-代码自动格式化" class="headerlink" title="google-java-format —— 代码自动格式化"></a>google-java-format —— 代码自动格式化</h3><h3 id="Key-promoter-X-——-会有这个操作的快捷键在界面的右下角进行告知"><a href="#Key-promoter-X-——-会有这个操作的快捷键在界面的右下角进行告知" class="headerlink" title="Key promoter X —— 会有这个操作的快捷键在界面的右下角进行告知"></a>Key promoter X —— 会有这个操作的快捷键在界面的右下角进行告知</h3><h3 id="CodeGlance-——-缩略图"><a href="#CodeGlance-——-缩略图" class="headerlink" title="CodeGlance —— 缩略图"></a>CodeGlance —— 缩略图</h3><h3 id="Leetcode-Editor-可以在IDEA中在线刷题"><a href="#Leetcode-Editor-可以在IDEA中在线刷题" class="headerlink" title="Leetcode Editor 可以在IDEA中在线刷题"></a>Leetcode Editor 可以在IDEA中在线刷题</h3><h3 id="RoboPOJOGenerator—JSON-（GsonFormat也可以，但是好久没更新过了）"><a href="#RoboPOJOGenerator—JSON-（GsonFormat也可以，但是好久没更新过了）" class="headerlink" title="RoboPOJOGenerator—JSON （GsonFormat也可以，但是好久没更新过了）"></a>RoboPOJOGenerator—JSON （GsonFormat也可以，但是好久没更新过了）</h3><h3 id="Statistic—-项目信息统计"><a href="#Statistic—-项目信息统计" class="headerlink" title="Statistic— 项目信息统计"></a>Statistic— 项目信息统计</h3><h3 id="CamelCase-多种命名格式之间切换"><a href="#CamelCase-多种命名格式之间切换" class="headerlink" title="CamelCase - 多种命名格式之间切换"></a>CamelCase - 多种命名格式之间切换</h3><h3 id="jclasslib-bytecode-viewer-查看字节码"><a href="#jclasslib-bytecode-viewer-查看字节码" class="headerlink" title="jclasslib bytecode viewer 查看字节码"></a>jclasslib bytecode viewer 查看字节码</h3><h3 id="Auto-filling-Java-call-arguments-自动补全参数"><a href="#Auto-filling-Java-call-arguments-自动补全参数" class="headerlink" title="Auto filling Java call arguments 自动补全参数"></a>Auto filling Java call arguments 自动补全参数</h3><h3 id="GenerateO2O——-自动填充参数的值"><a href="#GenerateO2O——-自动填充参数的值" class="headerlink" title="GenerateO2O—— 自动填充参数的值"></a>GenerateO2O—— 自动填充参数的值</h3><h3 id="GenerateAllSetter——自动调用所有-Setter-函数（可填充默认值）"><a href="#GenerateAllSetter——自动调用所有-Setter-函数（可填充默认值）" class="headerlink" title="GenerateAllSetter——自动调用所有 Setter 函数（可填充默认值）"></a>GenerateAllSetter——自动调用所有 Setter 函数（可填充默认值）</h3><h3 id="Maven-Helper-——方便maven项目解决jar冲突"><a href="#Maven-Helper-——方便maven项目解决jar冲突" class="headerlink" title="Maven Helper ——方便maven项目解决jar冲突"></a>Maven Helper ——方便maven项目解决jar冲突</h3><h3 id="Maven-search——搜索项目需要的依赖-shift-command-m"><a href="#Maven-search——搜索项目需要的依赖-shift-command-m" class="headerlink" title="Maven-search——搜索项目需要的依赖 shift+command+m"></a>Maven-search——搜索项目需要的依赖 <code>shift+command+m</code></h3><h3 id="Stack-trace-to-UML-——-根据-JVM-异常堆栈画-UML时序图和通信图"><a href="#Stack-trace-to-UML-——-根据-JVM-异常堆栈画-UML时序图和通信图" class="headerlink" title="Stack trace to UML —— 根据 JVM 异常堆栈画 UML时序图和通信图"></a>Stack trace to UML —— 根据 JVM 异常堆栈画 UML时序图和通信图</h3><h3 id="Java-Stream-Debugger-——-Stream-将操作步骤可视化"><a href="#Java-Stream-Debugger-——-Stream-将操作步骤可视化" class="headerlink" title="Java Stream Debugger —— Stream 将操作步骤可视化"></a>Java Stream Debugger —— Stream 将操作步骤可视化</h3><h3 id="Jrebel-for-Intellij-热部署"><a href="#Jrebel-for-Intellij-热部署" class="headerlink" title="Jrebel for Intellij 热部署"></a>Jrebel for Intellij 热部署</h3><h3 id="String-Manipulation-对字符串的处理"><a href="#String-Manipulation-对字符串的处理" class="headerlink" title="String Manipulation 对字符串的处理"></a>String Manipulation 对字符串的处理</h3><h3 id="Free-Mybatis-Plugin-——可以通过mapper接口里的方法跳转到mapper-xml里。"><a href="#Free-Mybatis-Plugin-——可以通过mapper接口里的方法跳转到mapper-xml里。" class="headerlink" title="Free Mybatis Plugin ——可以通过mapper接口里的方法跳转到mapper.xml里。"></a>Free Mybatis Plugin ——可以通过mapper接口里的方法跳转到mapper.xml里。</h3><h3 id="lombok——实体类常用方法注释搞定"><a href="#lombok——实体类常用方法注释搞定" class="headerlink" title="lombok——实体类常用方法注释搞定"></a>lombok——实体类常用方法注释搞定</h3><h3 id="ignore-——git忽略某些提交文件"><a href="#ignore-——git忽略某些提交文件" class="headerlink" title="ignore ——git忽略某些提交文件"></a>ignore ——git忽略某些提交文件</h3><h3 id="Free-mybatis-tool-——mapper–-gt-dao快速切换"><a href="#Free-mybatis-tool-——mapper–-gt-dao快速切换" class="headerlink" title="Free mybatis tool ——mapper–&gt;dao快速切换"></a>Free mybatis tool ——mapper–&gt;dao快速切换</h3><h3 id="RestfulTool-高版本适用"><a href="#RestfulTool-高版本适用" class="headerlink" title="RestfulTool   高版本适用"></a>RestfulTool   高版本适用</h3><h3 id="RestfulToolkit——-快捷跳转Action方法"><a href="#RestfulToolkit——-快捷跳转Action方法" class="headerlink" title="RestfulToolkit—— 快捷跳转Action方法"></a>RestfulToolkit—— 快捷跳转Action方法</h3><h3 id="RestfultoolkitX"><a href="#RestfultoolkitX" class="headerlink" title="RestfultoolkitX"></a>RestfultoolkitX</h3><h3 id="any-rule-正则表达式-alt-A-使用"><a href="#any-rule-正则表达式-alt-A-使用" class="headerlink" title="any-rule 正则表达式 alt+A 使用"></a>any-rule 正则表达式 <code>alt+A</code> 使用</h3><h3 id="GitToolBox-idea中能查看代码每一行最后修改人的插件"><a href="#GitToolBox-idea中能查看代码每一行最后修改人的插件" class="headerlink" title="GitToolBox  idea中能查看代码每一行最后修改人的插件"></a>GitToolBox  idea中能查看代码每一行最后修改人的插件</h3><h3 id="Json-Parser-json格式化插件"><a href="#Json-Parser-json格式化插件" class="headerlink" title="Json Parser    json格式化插件"></a>Json Parser    json格式化插件</h3><h3 id="JUnitGenerator-自动生成测试方法"><a href="#JUnitGenerator-自动生成测试方法" class="headerlink" title="JUnitGenerator    自动生成测试方法"></a>JUnitGenerator    自动生成测试方法</h3><h3 id="String-Manipulation一个比较实用的字符串转换工具，比如我们平时的变量命名可以一键转换驼峰等格式，还支持对字符串的各种加、解密（MD5、Base64等）操作。"><a href="#String-Manipulation一个比较实用的字符串转换工具，比如我们平时的变量命名可以一键转换驼峰等格式，还支持对字符串的各种加、解密（MD5、Base64等）操作。" class="headerlink" title="String Manipulation一个比较实用的字符串转换工具，比如我们平时的变量命名可以一键转换驼峰等格式，还支持对字符串的各种加、解密（MD5、Base64等）操作。"></a><code>String Manipulation</code>一个比较实用的字符串转换工具，比如我们平时的变量命名可以一键转换驼峰等格式，还支持对字符串的各种加、解密（<code>MD5</code>、<code>Base64</code>等）操作。</h3><h3 id="easy-javadoc一个可以快速为Java的类、方法、属性加注释的插件，还支持自定义注释样式，IDEA自身的Live-Templates也支持，不过操作稍显繁琐，使用时效率不太高。"><a href="#easy-javadoc一个可以快速为Java的类、方法、属性加注释的插件，还支持自定义注释样式，IDEA自身的Live-Templates也支持，不过操作稍显繁琐，使用时效率不太高。" class="headerlink" title="easy_javadoc一个可以快速为Java的类、方法、属性加注释的插件，还支持自定义注释样式，IDEA自身的Live Templates也支持，不过操作稍显繁琐，使用时效率不太高。"></a><code>easy_javadoc</code>一个可以快速为<code>Java</code>的类、方法、属性加注释的插件，还支持自定义注释样式，<code>IDEA</code>自身的<code>Live Templates</code>也支持，不过操作稍显繁琐，使用时效率不太高。</h3><h3 id="在为类、方法、属性加注释时，不仅会生成注释，还是会将对应变量、类、方法翻译成中文名，不过翻译的怎么样还要取决于你的命名水平。"><a href="#在为类、方法、属性加注释时，不仅会生成注释，还是会将对应变量、类、方法翻译成中文名，不过翻译的怎么样还要取决于你的命名水平。" class="headerlink" title="在为类、方法、属性加注释时，不仅会生成注释，还是会将对应变量、类、方法翻译成中文名，不过翻译的怎么样还要取决于你的命名水平。"></a>在为类、方法、属性加注释时，不仅会生成注释，还是会将对应变量、类、方法翻译成中文名，不过翻译的怎么样还要取决于你的命名水平。</h3>]]></content>
+      
+      
+      <categories>
+          
+          <category> IDEA </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> IDEA </tag>
+            
+            <tag> Java </tag>
+            
+            <tag> 环境配置 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>IEDA常用设置</title>
+      <link href="/2022/04/24/IEDA%E8%AE%BE%E7%BD%AE/"/>
+      <url>/2022/04/24/IEDA%E8%AE%BE%E7%BD%AE/</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/202204243541N4gysB.png" alt="image-20220424043541263"></p><h3 id="MAVEN设置"><a href="#MAVEN设置" class="headerlink" title="MAVEN设置"></a>MAVEN设置</h3><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/2022042401274q9q3m.png" alt="image-20220424050127887"></p><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/202204240732qmtqVZ.png" alt="image-20220424050732083"></p><figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-DarchetypeCatalog=internal</span><br></pre></td></tr></table></figure><h3 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h3><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/202204241030HsR0Z3.png" alt="image-20220424051030396"></p><h3 id="GitHub授权"><a href="#GitHub授权" class="headerlink" title="GitHub授权"></a>GitHub授权</h3><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/202204240913VDP4rB.png" alt="image-20220424050912983"></p><h3 id="编码设置"><a href="#编码设置" class="headerlink" title="编码设置"></a>编码设置</h3><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/202204244117IV0moQ.png" alt="image-20220424044117186"></p><h3 id="取消自动注释的缩进（避免添加注释自动到行首）"><a href="#取消自动注释的缩进（避免添加注释自动到行首）" class="headerlink" title="取消自动注释的缩进（避免添加注释自动到行首）"></a>取消自动注释的缩进（避免添加注释自动到行首）</h3><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/202204244046nXtc1j.png" alt="image-20220424044046051"></p><h3 id="设置自动编译"><a href="#设置自动编译" class="headerlink" title="设置自动编译"></a>设置自动编译</h3><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/2022042455490br4nk.png" alt="image-20220424045549568"></p><h3 id="设置类注释"><a href="#设置类注释" class="headerlink" title="设置类注释"></a>设置类注释</h3><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/2022042432211x1lCR.png" alt="image-20220418030455949"></p><h4 id="类注释模板"><a href="#类注释模板" class="headerlink" title="类注释模板"></a>类注释模板</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* <span class="doctag">@program</span>: $&#123;PROJECT_NAME&#125;</span></span><br><span class="line"><span class="comment">* <span class="doctag">@description</span>: $&#123;description&#125;</span></span><br><span class="line"><span class="comment">* <span class="doctag">@author</span>: Mr.Zhou</span></span><br><span class="line"><span class="comment">* <span class="doctag">@create</span>: $&#123;YEAR&#125;-$&#123;MONTH&#125;-$&#123;DAY&#125; $&#123;HOUR&#125;:$&#123;MINUTE&#125;</span></span><br><span class="line"><span class="comment">**/</span></span><br></pre></td></tr></table></figure><hr><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/202204244453j9EVNf.png" alt="image-20220424044453924"></p><h3 id="智能导包"><a href="#智能导包" class="headerlink" title="智能导包"></a>智能导包</h3><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/202204245339ifjfMr.png" alt="image-20220424045339360"></p><h3 id="忽略大小写"><a href="#忽略大小写" class="headerlink" title="忽略大小写"></a>忽略大小写</h3><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/202204245436ZDsLA4.png" alt="image-20220424045436878"></p><h3 id="取消单行显示tabs"><a href="#取消单行显示tabs" class="headerlink" title="取消单行显示tabs"></a>取消单行显示tabs</h3><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/202204245809w9myBI.png" alt="image-20220424045808954"></p><h3 id="取消代码拖拽"><a href="#取消代码拖拽" class="headerlink" title="取消代码拖拽"></a>取消代码拖拽</h3><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/2022042432213g5I5H.png" alt="image-20220418025711080"></p><h3 id="隐藏无用文件"><a href="#隐藏无用文件" class="headerlink" title="隐藏无用文件"></a>隐藏无用文件</h3><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/202204243221p3YyZR.png" alt="image-20220418111955553"></p><h3 id="XML注释格式"><a href="#XML注释格式" class="headerlink" title="XML注释格式"></a>XML注释格式</h3><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/202204245937sYZpPW.png" alt="image-20220424045937223"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> IDEA </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> IDEA </tag>
+            
+            <tag> Java </tag>
+            
+            <tag> 环境配置 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Redis安装配置</title>
+      <link href="/2022/04/24/Redis%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/"/>
+      <url>/2022/04/24/Redis%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/</url>
+      
+        <content type="html"><![CDATA[<h2 id="安装-Redis"><a href="#安装-Redis" class="headerlink" title="安装 Redis"></a>安装 Redis</h2><p>官网地址：<a href="https://redis.io/">https://redis.io/</a></p><h3 id="Homebrew-安装-Redis"><a href="#Homebrew-安装-Redis" class="headerlink" title="Homebrew 安装 Redis"></a>Homebrew 安装 Redis</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install redis</span><br></pre></td></tr></table></figure><h3 id="前台启动-Redis"><a href="#前台启动-Redis" class="headerlink" title="前台启动 Redis"></a>前台启动 Redis</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">redis-server</span><br></pre></td></tr></table></figure><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/202204243611S7aBLF.png" alt="image-20220424033611211"></p><p>要停止 Redis，请输入<code>Ctrl-C</code></p><h3 id="使用-launchd-启动-Redis"><a href="#使用-launchd-启动-Redis" class="headerlink" title="使用 launchd 启动 Redis"></a>使用 launchd 启动 Redis</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew services start redis</span><br></pre></td></tr></table></figure><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/202204243701bbqT0O.png" alt="image-20220424033701590"></p><h3 id="使用-launchd-查看托管-Redis-状态"><a href="#使用-launchd-查看托管-Redis-状态" class="headerlink" title="使用 launchd 查看托管 Redis 状态"></a>使用 launchd 查看托管 Redis 状态</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew services info redis</span><br></pre></td></tr></table></figure><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/2022042437306tFkG3.png" alt="image-20220424033730168"></p><h3 id="使用-launchd-重启-Redis"><a href="#使用-launchd-重启-Redis" class="headerlink" title="使用 launchd 重启 Redis"></a>使用 launchd 重启 Redis</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew services restart redis</span><br></pre></td></tr></table></figure><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/202204240354HrCHS4.png" alt="image-20220424100354345"></p><h3 id="使用-launchd-停止-Redis"><a href="#使用-launchd-停止-Redis" class="headerlink" title="使用 launchd 停止 Redis"></a>使用 launchd 停止 Redis</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew services stop redis</span><br></pre></td></tr></table></figure><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/2022042437458TbA6P.png" alt="image-20220424033745836"></p><hr><h2 id="配置Redis"><a href="#配置Redis" class="headerlink" title="配置Redis"></a>配置Redis</h2><p>我的配置文件路径是 <code>·/opt/homebrew/etc/redis.conf</code>(<code>command+shift+.</code>显示隐藏文件)</p><p>找不到的可以连接上命令行连接redis后，输入命令查看当前使用的配置文件</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">info server</span><br></pre></td></tr></table></figure><p><img src="/../../../Library/Application%20Support/typora-user-images/image-20220502221919317.png" alt="image-20220502221919317"></p><p><img src="/../../../Library/Application%20Support/typora-user-images/image-20220502224214677.png" alt="image-20220502224214677"></p><h3 id="我这边做的配置："><a href="#我这边做的配置：" class="headerlink" title="我这边做的配置："></a>我这边做的配置：</h3><p><strong>logfile</strong>：redis 日志文件，默认没有设置</p><figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">logfile /opt/homebrew/var/log/redis/log-redis.log</span><br></pre></td></tr></table></figure><p><strong>dir</strong>：redis 数据库文件路径</p><figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dir /opt/homebrew/var/db/redis/</span><br></pre></td></tr></table></figure><p><strong>requirepass</strong>：redis密码，默认没有做设置，需要的可以自己加上</p><figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">requirepass 123456</span><br></pre></td></tr></table></figure><h3 id="其他的配置（未作修改，需要的可以根据自己情况来更改）"><a href="#其他的配置（未作修改，需要的可以根据自己情况来更改）" class="headerlink" title="其他的配置（未作修改，需要的可以根据自己情况来更改）"></a>其他的配置（未作修改，需要的可以根据自己情况来更改）</h3><figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">daemonize        是否为守护模式（是否为后台启动）</span><br><span class="line">pidfile          进程锁文件</span><br><span class="line">port             端口</span><br><span class="line">timeout          客户端超时时间</span><br><span class="line">loglevel         日志级别</span><br><span class="line">databases        数据库数量 </span><br><span class="line">rdbcompression   存储到本地数据库时是否对数据进行压缩（lcf压缩）性能/容量（抉择）</span><br><span class="line">dbfilename       数据库文件名称</span><br></pre></td></tr></table></figure><h4 id="redis日志分为4个级别"><a href="#redis日志分为4个级别" class="headerlink" title="redis日志分为4个级别"></a>redis日志分为4个级别</h4><p>Redis4默认的设置为notice，开发测试阶段可以用debug（日志内容较多一般不建议使用），生产模式一般选用notice</p><ol><li><p>debug：会打印出很多信息，适用于开发和测试阶段</p></li><li><p>verbose（冗长的）：包含很多不太有用的信息，但比debug要清爽一些</p></li><li><p>notice：适用于生产模式</p></li><li><p>warning : 警告信息</p></li></ol><p><strong>更新完配置文件之后，重启 redis 使配置生效</strong></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew services restart redis</span><br></pre></td></tr></table></figure><h2 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h2><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/20220503225530x6qK7G.png" alt="image-20220503225530253"></p><p>可以看到我这边重启显示成功，但是 redis 实际上并没有跑起来</p><p>查看日志<code>/opt/homebrew/var/log/redis.log</code>(HomeBrew 创建的)</p><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/20220503225446jwZwbg.png" alt="image-20220503225446514"></p><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/20220503225346dhr9DN.png" alt="image-20220503225346558"></p><p>查看日志了解到上面配置的 redis 日志文件的目录没有</p><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/20220503225606BtVA3Q.png" alt="image-20220503225606643"></p><p>因为设置的路径不在用户目录里，所以可能没有权限创建文件夹</p><p>这里手动创建就好了 (或者修改配置文件，将日志放到用户目录下<code>/Users/zhoufan/xxxx/log-redis.log</code>)</p><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/20220503225718JGXivI.png" alt="image-20220503225718404"></p><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/20220503225825LakrQh.png" alt="image-20220503225825592"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Redis </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> HomeBrew </tag>
+            
+            <tag> Redis </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>HomeBrew命令</title>
+      <link href="/2022/04/24/HomeBrew%E5%91%BD%E4%BB%A4/"/>
+      <url>/2022/04/24/HomeBrew%E5%91%BD%E4%BB%A4/</url>
+      
+        <content type="html"><![CDATA[<h3 id="查看brew版本"><a href="#查看brew版本" class="headerlink" title="查看brew版本"></a>查看brew版本</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew -v</span><br></pre></td></tr></table></figure><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/202204241326A84VRW.png" alt="image-20220424031326759"></p><h3 id="安装软件"><a href="#安装软件" class="headerlink" title="安装软件"></a>安装软件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install wget</span><br></pre></td></tr></table></figure><h3 id="卸载软件"><a href="#卸载软件" class="headerlink" title="卸载软件"></a>卸载软件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew uninstall wget</span><br></pre></td></tr></table></figure><h3 id="搜索软件"><a href="#搜索软件" class="headerlink" title="搜索软件"></a>搜索软件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew search wget</span><br></pre></td></tr></table></figure><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/202204241411uaOgK5.png" alt="image-20220424031411228"></p><h3 id="查看brew安装的软件"><a href="#查看brew安装的软件" class="headerlink" title="查看brew安装的软件"></a>查看brew安装的软件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew list</span><br></pre></td></tr></table></figure><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/2022042414312LDkqW.png" alt="image-20220424031431314"></p><h3 id="查看软件安装路径"><a href="#查看软件安装路径" class="headerlink" title="查看软件安装路径"></a>查看软件安装路径</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew list wget</span><br></pre></td></tr></table></figure><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/202204241508SM6Ub8.png" alt="image-20220424031508656"></p><h3 id="更新brew"><a href="#更新brew" class="headerlink" title="更新brew"></a>更新brew</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew update</span><br></pre></td></tr></table></figure><h3 id="查看哪些安装包需要更新"><a href="#查看哪些安装包需要更新" class="headerlink" title="查看哪些安装包需要更新"></a>查看哪些安装包需要更新</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew outdated</span><br></pre></td></tr></table></figure><h3 id="更新所有包"><a href="#更新所有包" class="headerlink" title="更新所有包"></a>更新所有包</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew upgrade </span><br></pre></td></tr></table></figure><h3 id="更新指定的包"><a href="#更新指定的包" class="headerlink" title="更新指定的包"></a>更新指定的包</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew upgrade wget</span><br></pre></td></tr></table></figure><h3 id="查看可清理的旧版本包，不执行实际操作"><a href="#查看可清理的旧版本包，不执行实际操作" class="headerlink" title="查看可清理的旧版本包，不执行实际操作"></a>查看可清理的旧版本包，不执行实际操作</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew cleanup -n</span><br></pre></td></tr></table></figure><h3 id="清理所有包的旧版本"><a href="#清理所有包的旧版本" class="headerlink" title="清理所有包的旧版本"></a>清理所有包的旧版本</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew cleanup</span><br></pre></td></tr></table></figure><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/2022042416471HemOf.png" alt="image-20220424031647830"></p><h3 id="清理指定包的旧版本"><a href="#清理指定包的旧版本" class="headerlink" title="清理指定包的旧版本"></a>清理指定包的旧版本</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew cleanup <span class="variable">$FORMULA</span></span><br></pre></td></tr></table></figure><h3 id="查看已安装的包的依赖，树形显示"><a href="#查看已安装的包的依赖，树形显示" class="headerlink" title="查看已安装的包的依赖，树形显示"></a>查看已安装的包的依赖，树形显示</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew deps --installed --tree</span><br></pre></td></tr></table></figure><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/202204241746svWULe.png" alt="image-20220424031746627"></p><h3 id="删除某个包"><a href="#删除某个包" class="headerlink" title="删除某个包"></a>删除某个包</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew <span class="built_in">rm</span> <span class="variable">$FORMULA</span></span><br></pre></td></tr></table></figure><h3 id="删除所有版本"><a href="#删除所有版本" class="headerlink" title="删除所有版本"></a>删除所有版本</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew uninstall --force <span class="variable">$FORMULA</span></span><br></pre></td></tr></table></figure><h3 id="锁定某个包"><a href="#锁定某个包" class="headerlink" title="锁定某个包"></a>锁定某个包</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew pin <span class="variable">$FORMULA</span></span><br></pre></td></tr></table></figure><h3 id="取消锁定"><a href="#取消锁定" class="headerlink" title="取消锁定"></a>取消锁定</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew unpin <span class="variable">$FORMULA</span></span><br></pre></td></tr></table></figure><h3 id="浏览器打开Homebrew官网"><a href="#浏览器打开Homebrew官网" class="headerlink" title="浏览器打开Homebrew官网"></a>浏览器打开Homebrew官网</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew home</span><br></pre></td></tr></table></figure><h3 id="查看安装了包数量，文件数量，和总占用空间"><a href="#查看安装了包数量，文件数量，和总占用空间" class="headerlink" title="查看安装了包数量，文件数量，和总占用空间"></a>查看安装了包数量，文件数量，和总占用空间</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew info</span><br></pre></td></tr></table></figure><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/202204241820SjnSjZ.png" alt="image-20220424031820044"></p><h3 id="显示某个包的信息"><a href="#显示某个包的信息" class="headerlink" title="显示某个包的信息"></a>显示某个包的信息</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew info <span class="variable">$FORMULA</span></span><br></pre></td></tr></table></figure><p><img src="https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/202204241845XgX9sX.png" alt="image-20220424031845306"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> HomeBrew </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> HomeBrew </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>HomeBrew安装</title>
+      <link href="/2022/04/23/HomeBrew%E5%AE%89%E8%A3%85/"/>
+      <url>/2022/04/23/HomeBrew%E5%AE%89%E8%A3%85/</url>
+      
+        <content type="html"><![CDATA[<p>官网地址：<a href="https://brew.sh/index_zh-cn">https://brew.sh/index_zh-cn</a></p><p><strong>官网安装命令</strong>：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/bin/bash -c <span class="string">&quot;<span class="subst">$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)</span>&quot;</span></span><br></pre></td></tr></table></figure><p>可能由于网络原因安装慢，或者是安装失败</p><p><strong>卸载Homebrew</strong>（先卸载之前下载的部分文件）</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ruby -e <span class="string">&quot;S(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)&quot;</span></span><br></pre></td></tr></table></figure><p><strong>重新安装Homebrew</strong>（这个安装会快很多）</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/bin/zsh -c <span class="string">&quot;<span class="subst">$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)</span>&quot;</span></span><br></pre></td></tr></table></figure><p>建议选择 <strong>中科大</strong> 镜像源</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> HomeBrew </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 环境搭建 </tag>
+            
+            <tag> 软件安装 </tag>
+            
+            <tag> HomeBrew </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
