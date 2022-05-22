@@ -62,3 +62,5 @@ git config --global https.proxy
 ## IDEA 设置代理
 
 ![image-20220504220743061](https://raw.githubusercontent.com/HeroZhouFan/uPic/master/uPic/20220504220743wBi1H8.png)
+
+**参考博客**：https://blog.csdn.net/qq_37555071/article/details/114260533
